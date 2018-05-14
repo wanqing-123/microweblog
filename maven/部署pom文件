@@ -1,0 +1,6 @@
+maven部署pom文件
+
+有时候我们需要单独部署一个pom文件供其他开发者使用，一般来说这个pom文件比较高层，可以使用如下命令：
+mvn install:install-file -Dfile=[your file] -DgroupId=[xxx] -DartifactId=[xxx] -Dversion=[xxx] -Dpackaging=[pom|jar|other]
+
+对于install命令来说，只有file参数是必选的，
